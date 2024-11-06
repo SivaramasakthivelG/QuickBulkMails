@@ -6,7 +6,7 @@ import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-const val API_KEY = "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"
+const val API_KEY = ""
 
 interface SendGridService {
     @Headers(
