@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -6,9 +8,11 @@ plugins {
     kotlin("kapt")
 }
 
+
+
 android {
     namespace = "com.example.quickybulkemail"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.quickybulkemail"
@@ -16,8 +20,8 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -38,6 +42,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -67,5 +72,9 @@ dependencies {
     implementation(libs.dagger.hilt)
     implementation(libs.hilt.compose.navigation)
     kapt(libs.dagger.kapt)
+    implementation(libs.poi)
+    implementation(libs.poi.commons)
+    implementation(libs.poi.xmlbeans)
+    implementation(libs.navigation)
 
 }

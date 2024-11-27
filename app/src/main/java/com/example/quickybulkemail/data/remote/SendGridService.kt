@@ -6,11 +6,13 @@ import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-const val API_KEY = "Use yours"
 
+const val API_KEY = "Use yours"
 interface SendGridService {
+
+
     @Headers(
-        "Authorization: Bearer $API_KEY",
+        "Authorization: Bearer ${API_KEY}",
         "Content-Type: application/json"
     )
     @POST("v3/mail/send")

@@ -12,6 +12,7 @@ retrofit = "2.9.0"
 gson = "2.10.0"
 okhttp = "4.9.1"
 coroutines = "1.6.0"
+roomCompilerProcessingTesting = "2.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,6 +37,12 @@ coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", vers
 dagger-hilt = { module = "com.google.dagger:hilt-android", version = "2.50" }
 dagger-kapt = { module = 'com.google.dagger:hilt-android-compiler', version = "2.50" }
 hilt-compose-navigation = { module = "androidx.hilt:hilt-navigation-compose", version = "1.2.0" }
+poi = { group = "org.apache.poi", name = "poi-ooxml", version = "5.2.3" }
+poi-commons = { group = "org.apache.commons", name = "commons-compress", version = "1.21" }
+poi-xmlbeans = { group = "org.apache.xmlbeans", name = "xmlbeans", version = "5.1.1" }
+navigation = { group = "androidx.navigation", name = "navigation-compose", version = "2.8.0-beta07" }
+
+
 
 
 [plugins]
